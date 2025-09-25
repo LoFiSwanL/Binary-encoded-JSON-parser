@@ -38,7 +38,6 @@ Dictionary dictionary_load(const char *filepath)
     size_t pos = 0;
     size_t count = 0;
 
-    // Перший прохід — підрахунок entries
     while (pos + 2 <= raw_size) {
         uint8_t tag = raw_buffer[pos++];
         uint8_t key_len = raw_buffer[pos++];
@@ -55,7 +54,6 @@ Dictionary dictionary_load(const char *filepath)
         return dict;
     }
 
-    // Другий прохід — заповнення entries
     pos = 0;
     for (size_t i = 0; i < count; i++) {
         uint8_t tag = raw_buffer[pos++];

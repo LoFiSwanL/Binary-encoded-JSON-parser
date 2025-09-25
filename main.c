@@ -13,18 +13,18 @@ int main(int argc, char *argv[]) {
     const char* dictionary_filepath = argv[2];
     const char* json_filepath = argv[3];
 
-    printf("Starting BEJ parsing...\n");
+    printf("starting BEJ parsing...\n");
     printf("BEJ file: %s\n", bej_filepath);
-    printf("Dictionary: %s\n", dictionary_filepath);
-    printf("Output JSON: %s\n", json_filepath);
+    printf("dictionary: %s\n", dictionary_filepath);
+    printf("output JSON: %s\n", json_filepath);
 
     bool success = bej_parse(bej_filepath, dictionary_filepath, json_filepath);
 
     if (success) {
-        printf("BEJ parsing completed successfully! JSON saved to file %s\n", json_filepath);
+        printf("successfully! JSON saved to file %s\n", json_filepath);
         return 0;
     } else {
-        fprintf(stderr, "Error: Failed to parse the BEJ file.\n");
+        fprintf(stderr, "failed to parse the BEJ file.\n");
         return 1;
     }
     

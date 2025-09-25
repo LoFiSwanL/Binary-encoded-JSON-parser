@@ -18,7 +18,9 @@ typedef struct Dictionary {
 } Dictionary;
 
 Dictionary dictionary_load(const char *filepath);
+
 void dictionary_free(Dictionary *dictionary);
+
 const char* dictionary_key(const Dictionary* dict, uint32_t tag);
 
 #endif
