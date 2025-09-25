@@ -9,6 +9,5 @@ add_executable(Lab1
     json_write.c
     dictionary_read.c
     file_reader.c
-    example.bej
 )
 
