@@ -3,4 +3,8 @@
 !bej_parser.h
 !json_write.c
 !json_write.h
+!dictionary_read.c
+!dictionary_read.h
+!file_reader.c
+!file_reader.h
 !CMakeLists.txt
