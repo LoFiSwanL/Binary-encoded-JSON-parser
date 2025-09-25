@@ -4,9 +4,11 @@ project(Lab1)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Lab1 
-    main.cpp
-    AffineTransform.cpp
-    AffineTransform.h
-
+    main.c
+    bej_parser.c
+    json_write.c
+    dictionary_read.c
+    file_reader.c
+    example.bej
 )
 
