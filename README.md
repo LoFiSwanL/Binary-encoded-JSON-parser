@@ -1,0 +1,1 @@
+This project implements a simple Binary-encoded JSON (BEJ) Parser in C that reads a BEJ file with its dictionary and converts it into JSON; it is built with CMake, and example data as well as basic unit tests are included
